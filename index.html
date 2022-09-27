@@ -6,45 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Yehezkiel Wiradhika | CV</title>
   </head>
   <body class="md:px-20 px-7 py-10">
     <header id="home">
       <div class="bg-black text-white py-5 px-3 md:px-10">
-        <h1 class="md:text-6xl text-4xl font-semibold">Yehezkiel Wiradhika</h1>
-        <h2 class="md:text-3xl text-xl mt-2 font-semibold">
+        <h1 class="md:text-6xl md:text-left text-center text-4xl font-semibold">
+          Yehezkiel Wiradhika
+        </h1>
+        <hr class="mt-3 block md:hidden" />
+        <h2
+          class="md:text-3xl text-center md:text-left text-md mt-2 font-semibold"
+        >
           Informatics Engineering Student at ITS, Surabaya
         </h2>
       </div>
-      <nav class="bg-blue-600 px-2 md:px-10 text-white">
-        <ul class="flex flex-wrap">
+      <nav
+        id="navbar"
+        class="bg-blue-600 py-2 md:py-0 px-2 md:px-10 text-white"
+      >
+        <i
+          id="navbar-button"
+          class="fa-solid font-bold inline-block md:hidden fa-bars text-2xl"
+        ></i>
+        <ul
+          id="navbar-list"
+          class="md:flex md:flex-row items-center md:items-start flex-col hidden flex-wrap"
+        >
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#home">Home</a>
           </li>
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#about">About</a>
           </li>
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#skills">Skills</a>
           </li>
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#studies">Studies</a>
           </li>
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#experiences">Experiences</a>
           </li>
           <li
-            class="px-5 py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
+            class="px-5 text-center md:w-auto w-full py-1 hover:bg-red-500 transition-colors duration-100 text-lg"
           >
             <a href="#contacts">Contacts</a>
           </li>
@@ -307,7 +329,7 @@
             </h3>
             <p>Jul 2021 - Des 2021</p>
             <p>Surabaya, East Java, Indonesia</p>
-            <p class="mt-1">
+            <p class="mt-1 text-justify">
               I emphasize some of my works including how the form works as its
               display and linking them, making the floating objects, and page
               responsiveness. I also experience the making of the Schematics's
@@ -321,7 +343,7 @@
             </h3>
             <p>May 2022 - now</p>
             <p>Surabaya, East Java, Indonesia</p>
-            <p class="mt-1">
+            <p class="mt-1 text-justify">
               Here, we are using Nextjs framework, also tailwindcss as the css
               framework. We implement some form, such as static website, login &
               register, event registration, and many more. This is my first
@@ -334,7 +356,7 @@
             </h3>
             <p>Mar 2022 - now</p>
             <p>Indonesia</p>
-            <p class="mt-1">
+            <p class="mt-1 text-justify">
               I work both as the backend Enginner also the Frontend one to
               connect the backend. Here we are using MERN stack to make the
               website up and running. For styling, we use tailwindcss. This is
@@ -347,7 +369,7 @@
             </h3>
             <p>Jul 2021 - Desember 2021</p>
             <p>Surabaya, East Java, Indonesia</p>
-            <p class="mt-1">
+            <p class="mt-1 text-justify">
               I created website for Hult Prize at ITS which is the first solo
               project that I do. This website emphesizes on its animation and
               graphical design in which you can see on its moving objects and
@@ -360,7 +382,7 @@
             </h3>
             <p>Feb 2021 - Mar 2021</p>
             <p>Surabaya, East Java, Indonesia</p>
-            <p class="mt-1">
+            <p class="mt-1 text-justify">
               Front end developer, Cofilm Indonesia Company internship
             </p>
           </li>
@@ -449,4 +471,5 @@
       <p class="mt-1">&copy; Yehezkiel Wiradhika 2022</p>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
